@@ -1,0 +1,15 @@
+<!-- core/templates/core/patient_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient List</title>
+</head>
+<body>
+    <h1>Patients</h1>
+    <ul>
+        {% for patient in patients %}
+            <li>{{ patient.first_name }} {{ patient.last_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
